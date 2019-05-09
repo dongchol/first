@@ -1,6 +1,7 @@
 from django.urls import path
 
 from . import views
+app_name = 'news'   #0509 추가
 
 urlpatterns = [
     path('articles/<int:year>/', views.year_archive),

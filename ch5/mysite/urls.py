@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import path
 from django.contrib import admin
 from django.urls import path, include
+from polls import views
+from news import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('polls/',include('polls.urls')),
-    path('news/', include('news.urls')),
+    path('news/',include('news.urls')),
 ]
 
 #웹브라우저가 path를 주면 그게 명령이 된다.
